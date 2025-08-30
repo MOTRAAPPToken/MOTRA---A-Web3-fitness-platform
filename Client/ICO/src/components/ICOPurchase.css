@@ -1,0 +1,422 @@
+.ico-purchase {
+  /* Component container styles */
+}
+
+.ico-purchase__title {
+  margin-bottom: 20px;
+}
+
+.ico-purchase__token-info {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--blue-50);
+  border-radius: 8px;
+}
+
+.ico-purchase__token-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  font-size: 0.875rem;
+}
+
+.ico-purchase__token-field {
+  /* Individual token info field */
+}
+
+.ico-purchase__token-label {
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.ico-purchase__token-value {
+  /* Token value styling */
+}
+
+.ico-purchase__token-value--active {
+  color: #059669;
+}
+
+.ico-purchase__token-value--inactive {
+  color: #dc2626;
+}
+
+.ico-purchase__token-value--has-balance {
+  color: #059669;
+}
+
+.ico-purchase__token-value--no-balance {
+  color: #6b7280;
+}
+
+.ico-purchase__connect-message {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--gray-500);
+}
+
+.ico-purchase__balance-sufficient {
+  color: #059669;
+}
+
+.ico-purchase__balance-insufficient {
+  color: #dc2626;
+}
+
+.ico-purchase__payment-section {
+  margin-bottom: 20px;
+}
+
+.ico-purchase__payment-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.ico-purchase__payment-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ico-purchase__payment-button {
+  flex: 1;
+}
+
+.ico-purchase__amount-section {
+  margin-bottom: 16px;
+}
+
+.ico-purchase__amount-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.ico-purchase__cost-display {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: var(--gray-50);
+  border-radius: 8px;
+}
+
+.ico-purchase__cost-text {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.ico-purchase__cost-note {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 4px;
+}
+
+.ico-purchase__cost-note.insufficient {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.ico-purchase__purchase-button {
+  width: 100%;
+}
+
+.ico-purchase__purchase-button:disabled {
+  background-color: #9ca3af !important;
+  color: #6b7280 !important;
+  cursor: not-allowed !important;
+  opacity: 0.6;
+}
+
+.ico-purchase__fiat-section {
+  margin-top: 20px;
+}
+
+.ico-purchase__fiat-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ico-purchase__fiat-summary {
+  font-size: 1rem;
+  color: var(--gray-700);
+  margin-bottom: 8px;
+  padding: 12px;
+  background: var(--yellow-50);
+  border-radius: 8px;
+  border: 1px solid var(--yellow-200);
+}
+
+.ico-purchase__fiat-description {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+.ico-purchase__buy-widget {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 16px;
+}
+
+.ico-purchase__fiat-note {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  text-align: center;
+  padding: 12px;
+  background: var(--blue-50);
+  border-radius: 6px;
+  border: 1px solid var(--blue-200);
+}
+
+.ico-purchase__processing-fiat {
+  text-align: center;
+  padding: 24px;
+  background: var(--green-50);
+  border-radius: 12px;
+  border: 1px solid var(--green-200);
+}
+
+.ico-purchase__processing-spinner {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ico-purchase__processing-fiat h4 {
+  color: var(--green-800);
+  margin-bottom: 8px;
+}
+
+.ico-purchase__processing-fiat p {
+  color: var(--green-700);
+  margin-bottom: 20px;
+}
+
+.ico-purchase__processing-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.ico-purchase__processing-step {
+  padding: 8px 12px;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--gray-700);
+  border: 1px solid var(--green-200);
+}
+
+.ico-purchase__seamless-purchase {
+  text-align: center;
+}
+
+.ico-purchase__total-sold {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ico-purchase__total-sold-text {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+/* Error Modal Styles */
+.ico-purchase__error-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.ico-purchase__error-modal {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.ico-purchase__error-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--red-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.ico-purchase__error-icon-text {
+  font-size: 24px;
+  color: var(--red-600);
+}
+
+.ico-purchase__error-title {
+  margin: 0 0 12px;
+  color: var(--gray-900);
+  font-size: 1.125rem;
+}
+
+.ico-purchase__error-message {
+  margin: 0 0 20px;
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+.ico-purchase__error-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+}
+
+.ico-purchase__error-button:hover {
+  background: #b91c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ico-purchase__token-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ico-purchase__payment-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Add Token to Wallet Button - Small Version */
+.ico-purchase__add-token-bottom {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.ico-purchase__add-token-button-small {
+  background: var(--gray-100);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ico-purchase__add-token-button-small:hover {
+  background: var(--gray-200);
+  border-color: var(--gray-400);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ico-purchase__add-token-button-small:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ico-purchase__motra-logo {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* Wrong Network Warning */
+.ico-purchase__wrong-network {
+  text-align: center;
+  padding: 24px;
+  background: var(--yellow-50);
+  border-radius: 12px;
+  border: 1px solid var(--yellow-200);
+  margin: 20px 0;
+}
+
+.ico-purchase__wrong-network-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.ico-purchase__wrong-network h4 {
+  color: var(--yellow-800);
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+}
+
+.ico-purchase__wrong-network p {
+  color: var(--yellow-700);
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.ico-purchase__current-network {
+  background: var(--yellow-100);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin: 16px 0;
+}
+
+.ico-purchase__switch-network-button {
+  background: var(--yellow-600);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 16px 0;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ico-purchase__switch-network-button:hover {
+  background: var(--yellow-700);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ico-purchase__switch-network-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ico-purchase__network-help {
+  font-size: 0.75rem;
+  color: var(--yellow-600);
+  background: var(--yellow-100);
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--yellow-200);
+  margin-top: 16px;
+  line-height: 1.4;
+}

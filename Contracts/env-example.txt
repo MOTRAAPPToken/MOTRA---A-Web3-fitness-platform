@@ -1,0 +1,21 @@
+# Private key for deployment (DO NOT COMMIT THE REAL .env FILE)
+PRIVATE_KEY=your_private_key_here
+
+# RPC URLs
+BASE_RPC_URL=https://mainnet.base.org
+BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
+ETHEREUM_RPC_URL=https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID
+SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID
+
+# API Keys for contract verification
+ETHERSCAN_API_KEY=your_etherscan_api_key
+BASESCAN_API_KEY=your_basescan_api_key
+INFURA_PROJECT_ID=your_infura_project_id
+
+# Gas reporting
+REPORT_GAS=false
+
+# USDT Addresses for different networks
+USDT_BASE=0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb
+USDT_ETHEREUM=0xdAC17F958D2ee523a2206206994597C13D831ec7
+USDT_POLYGON=0xc2132D05D31c914a87C6611C10748AEb04B58e8F

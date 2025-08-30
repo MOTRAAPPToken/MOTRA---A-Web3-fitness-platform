@@ -1,0 +1,28 @@
+{
+  "name": "motra-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for MOTRA fitness platform ICO",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:baseSepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:ethereum": "hardhat run scripts/deploy.js --network ethereum",
+    "verify:base": "hardhat verify --network base",
+    "verify:baseSepolia": "hardhat verify --network baseSepolia",
+    "clean": "hardhat clean",
+    "size": "hardhat size-contracts"
+  },
+  "keywords": ["motra", "fitness", "ico", "blockchain", "ethereum", "base"],
+  "author": "MOTRA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  }
+}
