@@ -3,7 +3,7 @@
 This guide will walk you through deploying the MOTRA ICO project from scratch, including smart contract deployment and frontend setup.
 
 
-## 🚀 Step 1: Smart Contract Deployment
+## Step 1: Smart Contract Deployment
 
 ### 1.1 Deploy MOTRA Token Contract
 
@@ -141,7 +141,7 @@ npm run dev
 2. Confirm in MetaMask
 3. Check that MOTRA token appears in your wallet
 
-## 📝 Step 5: Production Deployment
+##  Step 5: Production Deployment
 
 ### 5.1 Build for Production
 
